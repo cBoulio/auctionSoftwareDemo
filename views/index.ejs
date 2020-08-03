@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pageStyles.css">  
+    <script src="../javascripts/getData.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <div class="form-group">
+      <label for="sel1">Sort By:</label>
+      <select class="form-control" id="sel1"  onchange="sortBy();">
+        <option>Recent</option>
+        <option>Category</option>
+        <option>Username</option>
+        <option>Projects</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+
+      <button onClick='back()'><--Back</button>
+      <button onClick='forward()'>Forward--></button>
+  
+    </div>
+   
+        
+          <b style="margin-right:37px;">Project Title</b>
+          <b style="margin-right:27px;">Username</b>
+          <b>Category</b>
+
+    
+    <table id='dataTable' style='width: 500px;'>
+     
+
+    
+  </table>
+  
+  </body>
+</html>

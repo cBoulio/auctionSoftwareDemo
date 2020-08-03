@@ -1,0 +1,1 @@
+SELECT * FROM ilance_users JOIN ilance_projects ON ilance_users.user_id = ilance_projects.user_id LEFT JOIN ilance_project_categories ON ilance_projects.cid = ilance_project_categories.cid
